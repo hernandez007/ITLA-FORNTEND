@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times;
+            margin: auto;
+            padding: 0;
+            max-width: 1000px;
+            background: #e9ecef;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+            margin: 10px;
+        }
+      
+        header img {
+            max-width: 200px;
+            max-height: 200px;
+        }
+        nav {
+            background-color: #343a40;
+            color: white;
+            
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    
+        nav a:hover {
+            background: #e9ecef;
+            color: #000;
+            transition: ease-in;
+            padding: 10px;
+            border-radius: 10px
+        }
+        .black{
+            font-weight:bold;
+        }
+        .about{
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+        }
+        .info-contenedor{
+            width: 50%;
+            height: 300px;
+        }
+        .contenedor-img{
+            width: 300px;
+            height: 300px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: inset;
+
+        }
+        .img-about{
+            width: 300px;
+            height: 300px;
+        }
+
+        /* section {
+            background-color: #e9ecef;
+        } */
+        footer {
+            /* background-color: #f8f9fa; */
+            text-align: center;
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px;
+
+        }
+        .services{
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            
+        }
+
+        .card h2 {
+            margin: 15px 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 18px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            /* width: 500px; */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+            margin: auto;
+           width: 600px;
+           padding: 20px;
+           background-color: #ffffff;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 10px;
+            /* outline: auto ; */
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+
+        }
+        form button {
+            padding: 10px;
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #333;
+        }
+        h2{
+            text-align: center;
+        }
+        .error {
+            color:red;
+            font-size: 0.8rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://freelogopng.com/images/all_img/1686390174tesla-logo-png-black.png" alt="Logo Tesla" class="">
+    </header>
+    <nav>
+        <a href="#">Inico</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#services">Vehiculos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <section id="about" class="about">
+        <article class="info-contenido">
+            <h2 class="titulo-info">Sobre Nosotros</h2>
+            <p> <span class="black"> Tesla, Inc. </span>es una empresa estadounidense con sede en Austin, Texas, liderada por Elon Musk, la cual diseña, fabrica y vende automóviles eléctricos, componentes para la propulsión de vehículos eléctricos, techos solares, instalaciones solares fotovoltaicas y baterías domésticas.</p>
+        </article>
+        <article class="contenedor-img">
+            <img src="https://pngimg.com/uploads/tesla_logo/tesla_logo_PNG22.png" alt="Logo Tesla" class="img-about">
+        </article>
+    </section>
+    <section id="services" >
+        
+        <h2>Vehiculos</h2>
+        <!-- <p>Los Mejores Modelos del Mercado</p> -->
+        <article class="services">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.yZFjXl8-zgGP4yR44PLqzAHaDt?rs=1&pid=ImgDetMain" alt="Imagen del Vehículo">
+                <h2>Tesla Model Y</h2>
+                <p>Precio: $31,4901</p>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.64eUFvuWSA4QG8c_gCqhLgAAAA?rs=1&pid=ImgDetMain" alt="Imagen del Vehículo">
+                <h2>Tesla Model 3</h2>
+                <p>Precio: $34,990</p>
+            </div>
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.ucceSepMWtF9uAz39bF4NgHaEK?rs=1&pid=ImgDetMain" alt="Imagen del Vehículo">
+                <h2>Tesla Model S</h2>
+                <p>Precio: $68,490</p>
+            </div>
+        </article>
+       
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Nombre" >
+            <div class="error" id="errorNombres"></div>
+            
+            <input type="text" id="subject" name="subject" placeholder="Asunto" maxlength="100" >
+            <div class="error" id="errorAsunto"></div>
+
+            <input type="email" id="email" name="email" placeholder="Email" >
+            <div class="error" id="errorCorreo"></div>
+
+            <input type="tel" id="phone" name="phone" placeholder="Teléfono" >
+            <div class="error" id="errorTelefono"></div>
+            
+            <textarea id="message" name="message" placeholder="Mensaje" ></textarea>
+            <div class="error" id="errorMensaje"></div>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+    <footer>
+        <p>© 2024 Tesla - Aderson. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            let isValid = true;
+            event.preventDefault();
+            document.querySelectorAll('.error').forEach(function(elemento){
+                    elemento.textContent='';
+                })
+            const name = document.getElementById('name').value;
+            const subject = document.getElementById('subject').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            if (name===''){
+                    document.getElementById('errorNombres').textContent = 'Rellena el campo';
+                    isValid = false;
+                }
+                else if (name.lenght>90){
+                    document.getElementById('errorNombres').textContent = 'Máximo 90 caracteres';
+                    isValid = false;
+                }
+                else if (/[^a-zA-Z\s]/.test(name)){
+                    document.getElementById('errorNombres').textContent = 'Solo se admiten letras y espacios';
+                    isValid = false;
+                }
+                if (subject===''){
+                    document.getElementById('errorAsunto').textContent = 'Rellena el campo';
+                    isValid = false;
+                }
+                else if (subject.lenght>100){
+                    document.getElementById('errorAsunto').textContent = 'Máximo 100 caracteres';
+                    isValid = false;
+                }
+               
+              
+                if (phone===''){
+                    document.getElementById('errorTelefono').textContent = 'Rellena el campo';
+                    isValid = false;
+                }
+                else if(phone.lenght!=10){
+                    document.getElementById('errorTelefono').textContent = 'El telefono debe tener 10 digitos';
+                    isValid = false;
+                }
+                else if(/[^0-9]/.test(phone)){
+                    document.getElementById('errorTelefono').textContent = 'Este campo debe ser solo numeros';
+                    isValid = false;
+                }
+                if (email===''){
+                    document.getElementById('errorCorreo').textContent = 'Rellena el campo';
+                    isValid = false;
+                }
+                else if (!/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,5})$/.test(email)){
+                    document.getElementById('errorCorreo').textContent = 'Correo inválido';
+                    isValid = false;
+                }
+                if (message===''){
+                    document.getElementById('errorMensaje').textContent = 'Rellena el campo';
+                    isValid = false;
+                }
+                else if (message.lenght>300){
+                    document.getElementById('errorMensaje').textContent = 'Máximo 300 caracteres';
+                    isValid = false;
+                }
+                if (isValid){
+                    alert("Registro exitoso");
+                }
+            
+        
+        });
+    </script>
+</body>
+</html>

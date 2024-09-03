@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times;
+            margin: auto;
+            padding: 0;
+            max-width: 1000px;
+            background: #e9ecef;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+            margin: 10px;
+        }
+      
+        header img {
+            max-width: 200px;
+            max-height: 200px;
+        }
+        nav {
+            background-color: #343a40;
+            color: white;
+            
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    
+        nav a:hover {
+            background: #e9ecef;
+            color: #000;
+            transition: ease-in;
+            padding: 10px;
+            border-radius: 10px
+        }
+        .black{
+            font-weight:bold;
+        }
+        .about{
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+        }
+        .info-contenedor{
+            width: 50%;
+            height: 300px;
+        }
+        .contenedor-img{
+            width: 300px;
+            height: 300px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: inset;
+
+        }
+        .img-about{
+            width: 300px;
+            height: 300px;
+        }
+
+        section {
+            background-color: #e9ecef;
+        }
+        footer {
+            /* background-color: #f8f9fa; */
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            margin: auto;
+        }
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 10px;
+            outline: auto ;
+            border: none;
+        }
+        form button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+        #contact h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://freelogopng.com/images/all_img/1686390174tesla-logo-png-black.png" alt="Logo Tesla" class="">
+    </header>
+    <nav>
+        <a href="#">Inico</a>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#services">Vehiculos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+    <section id="about" class="about">
+        <article class="info-contenido">
+            <h2 class="titulo-info">Sobre Nosotros</h2>
+            <p> <span class="black"> Tesla, Inc. </span>es una empresa estadounidense con sede en Austin, Texas, liderada por Elon Musk, la cual diseña, fabrica y vende automóviles eléctricos, componentes para la propulsión de vehículos eléctricos, techos solares, instalaciones solares fotovoltaicas y baterías domésticas.</p>
+        </article>
+        <article class="contenedor-img">
+            <img src="https://pngimg.com/uploads/tesla_logo/tesla_logo_PNG22.png" alt="Logo Tesla" class="img-about">
+        </article>
+    </section>
+    <section id="services">
+        <h2>Vehiculos</h2>
+        <p>Los Mejores Modelos del Mercado</p>
+    </section>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Nombre" maxlength="90" required pattern="[A-Za-z\s]+" title="El nombre no puede contener números ni símbolos">
+            <input type="text" id="subject" name="subject" placeholder="Asunto" maxlength="100" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Teléfono" pattern="\d{10}" title="El teléfono debe tener 10 dígitos" required>
+            <textarea id="message" name="message" placeholder="Mensaje" maxlength="300" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+    <footer>
+        <p>© 2024 Tesla - Aderson. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const subject = document.getElementById('subject').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            if (name && subject && email && phone && message) {
+                document.getElementById('contactForm').reset();
+                document.getElementById('formMessage').textContent = 'El formulario se envió correctamente';
+            }
+        });
+    </script>
+</body>
+</html>
