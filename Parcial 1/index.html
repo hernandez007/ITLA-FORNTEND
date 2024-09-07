@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Divisas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Divisas (USD)</h1>
+        
+        <!-- Divisa 1: EUR -->
+        <div class="currency-box">
+            <h3>Tasa de cambio USD a EUR</h3>
+            <p id="rate-eur">Cargando tasa de cambio...</p>
+            <input type="number" id="amount-eur" placeholder="Ingrese monto en USD">
+            <button onclick="convertCurrency('EUR')">Convertir a EUR</button>
+            <p class="result" id="result-eur"></p>
+        </div>
+
+        <!-- Divisa 2: GBP -->
+        <div class="currency-box">
+            <h3>Tasa de cambio USD a GBP</h3>
+            <p id="rate-gbp">Cargando tasa de cambio...</p>
+            <input type="number" id="amount-gbp" placeholder="Ingrese monto en USD">
+            <button onclick="convertCurrency('GBP')">Convertir a GBP</button>
+            <p class="result" id="result-gbp"></p>
+        </div>
+
+        <!-- Divisa 3: JPY -->
+        <div class="currency-box">
+            <h3>Tasa de cambio USD a JPY</h3>
+            <p id="rate-jpy">Cargando tasa de cambio...</p>
+            <input type="number" id="amount-jpy" placeholder="Ingrese monto en USD">
+            <button onclick="convertCurrency('JPY')">Convertir a JPY</button>
+            <p class="result" id="result-jpy"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
