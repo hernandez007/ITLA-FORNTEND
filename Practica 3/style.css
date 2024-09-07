@@ -1,0 +1,333 @@
+:root{
+    --color-primary:#0D2354;
+    --color-tree:#133273;
+    --color-neutral:#fefefe;
+    --color-white:#fff;
+    --color-secundary: #ccc;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+/* Estilos del header  */
+/* -------------------------------------------------------------------------- */
+header {
+    background-image: url("https://wallpaper.dog/large/11020968.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600PX;
+    display: flex;
+    flex-direction: column;
+}
+header .header-container{
+    display: flex;
+   
+}
+header .header-container .menu-nav{
+    margin: 30px auto;
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row;
+    max-height: 50px;
+    justify-content: space-between;
+    padding: 15px;
+    flex-wrap: wrap;
+
+}
+header .header-container .menu-nav a{
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.5em;
+    
+}
+
+.menu-nav a {
+    position: relative;
+    text-decoration: none;
+    font-size: small;
+    font-weight: 300;
+    color: var(--color-white);;
+    padding: 5px 0;
+    transition: var(--color-neutral) 0.3s ease;
+}
+
+.menu-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-neutral);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.menu-nav a:hover::after {
+    width: 100%;
+}
+header .header-container .img-header {
+    width: 100px;
+    max-height: 100px;
+    margin: 10px 40px;
+
+   
+}
+header .header-container .img-header img {
+    width: 100px;
+    height: 100px;
+}
+
+header  .header-info {
+    margin: 100px 40px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s ease-out forwards;
+
+}
+header .header-info h1 {
+    color: var(--color-white);
+    font-size: 40px;
+
+}
+
+header .header-info p {
+    color: var(--color-secundary);
+    font-size: 20px;
+
+}
+
+
+/* Estilos del main  */
+/* -------------------------------------------------------------------------- */
+
+
+/* Estilos del about  */
+/* -------------------------------------------------------------------------- */
+
+main section{
+    padding: 30px;
+    max-height: 800PX;
+    display: flex;
+    flex-direction: column;
+}
+main .about{
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    max-width: 1000px;
+    gap: 10px;
+    background-color: var(--color-neutral);
+
+}
+main .title-section{
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    text-transform: uppercase;
+}
+main .title-section h2{
+    font-size: 1.5em;
+    font-weight:500px;
+
+}
+main .about .container-about{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    margin: 0 auto;
+    
+}
+main .about .container-about article{
+    padding: 10px;
+    margin-right:10px ;
+    width: 50%;
+    
+}
+main .about .container-about article p{
+   text-align: justify;
+    font-size: 15px;
+    color: #000;
+    font-weight: 300;
+}
+main .about .container-about .about-img img{
+    border-radius: 20px;
+    
+    box-shadow: 3px 9px 12px -4px rgba(0,0,0,0.76);
+}
+/* Estilos del teams  */
+/* -------------------------------------------------------------------------- */
+main .team{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--color-secundary);
+    background-image: url("https://images.unsplash.com/photo-1702580651019-84632235f93a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+}
+main .team h2{
+    color: var(--color-white);
+}
+    
+main .team .container-team-card {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 10px;
+}
+main .team .card-team{
+    width: 300px;
+    height: 450px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 9px 12px -4px rgba(0,0,0,0.76); ;
+
+}
+main .team .card-team:hover{
+    transform: translatey(-7px);
+    box-shadow: 5px 10px 12px -4px rgba(0,0,0,0.76); ;
+    transition: 0.5s ease-in;
+
+}
+main .team .card-team:hover::after{
+    transition: 0.5s ease-out;
+}
+main .team .card-team .card-img{
+    padding: 10px;
+    width: 100%;
+    height: 225px;
+    background-color: #fefefe;
+    text-align: center;
+    border-radius: 10px;
+
+}
+main .team .card-team .card-img img{
+    max-width: 300px;
+    height:100%;
+}
+main .team .card-team .card-info{
+    width: 100%;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+
+}
+main .team .card-team .card-info h3{
+    font-size: 1.5em;
+    color: #000;
+}
+main .team .card-team .card-info p{
+    font-size: 1em;
+    color: #0000004c;
+    line-height: 1.5em;
+
+}
+main .team .card-team .card-info button{
+    padding: 10px;
+    background-color: #0D2354 ;
+    border: solid 1px #000;
+    border-radius: 5px;
+    color: var(--color-white);
+}
+main .team .card-team .card-info button:hover{
+    background-color: #133273 ;
+    cursor: pointer;
+}
+/* Estilos del contact  */
+/* -------------------------------------------------------------------------- */
+main .contact{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color-neutral);
+    margin: 0 auto;
+
+}
+.form-container{
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    width: 800px;    
+}
+
+.form-container h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-container input[type="text"], input[type="number"], input[type="email"], input[type="password"],textarea,input[type="tel"]{
+    width: 100%;
+    padding: 15px 10px;
+    margin: 10px 0;
+    border: 1px solid var(--color-secundary);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form-container input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="password"]:focus,textarea:focus ,input[type="tel"]:focus{
+    border: 2px solid var(--color-tree);
+}
+.form-container button{
+    width: 100%;
+    padding: 15px;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.form-container button:hover {
+    background-color: var(--color-tree);
+    cursor: pointer;
+}
+
+.error {
+    border: 2px solid red !important;
+    outline: none !important;
+}
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+/* Footer */
+/* -------------------------------------------------------------------------- */
+footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: var(--color-primary);
+    flex-direction: column;
+    padding: 40px;
+    text-align: center;
+  
+}
+footer p{
+  
+    text-align: center;
+    color: var(--color-white);
+}
+/* Animaciones */
+/* -------------------------------------------------------------------------- */
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
