@@ -1,0 +1,388 @@
+{
+    "arrayServices": [
+      {
+        "idService": 1,
+        "urlImg": "img/Services/branding.png",
+        "titleService": "Logo & Branding",
+        "descriptionService": "Creamos identidades visuales atractivas que conectan con el público objetivo, ayudando a las marcas a destacar en su industria.",
+        "important": "El branding adecuado establece una conexión emocional con los clientes y refuerza la lealtad de marca.",
+        "objectives": "Crear una imagen visual única que refleje los valores y la misión de la marca.",
+        "plans": [
+          {
+            "idPlan": 1,
+            "typePlan": "Basico",
+            "urlPlanImg":"Img/pay/usuario (1).png",
+            "price": 2999.00,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "3 Conceptos de logos"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Free mockups"
+              }, 
+              {
+                "idContain": 3,
+                "containDescription": "Revision ilimitada"
+              },
+              {
+                "idContain": 4,
+                "containDescription": "Derechos reservados"
+              }
+            ]
+          },
+          {
+            "idPlan": 2,
+            "typePlan": "Profesional",
+            "urlPlanImg":"Img/pay/rectangulo-profesional.png",
+            "price": 3599.00,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "5 Conceptos de logos"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Free mockups"
+              }, 
+              {
+                "idContain": 3,
+                "containDescription": "Revision ilimitada"
+              },
+              {
+                "idContain": 4,
+                "containDescription": "Kit de Redes Sociales"
+              },
+              {
+                "idContain": 5,
+                "containDescription": "Derechos reservados"
+              }
+            ]
+          },
+          {
+            "idPlan":3,
+            "typePlan": "Empresarial",
+            "urlPlanImg":"Img/pay/crecimiento-profesional.png",
+            "price": 4275.00,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "7 Conceptos de logos"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Free mockups"
+              }, 
+              {
+                "idContain": 3,
+                "containDescription": "Revision ilimitada"
+              },
+              {
+                "idContain": 4,
+                "containDescription": "Kit de Redes Sociales"
+              },
+              {
+                "idContain": 5,
+                "containDescription": "Linea Grafica<"
+              },
+              {
+                "idContain": 6,
+                "containDescription": "Derechos reservados"
+              }
+            ]
+          }
+          
+        ]
+      },
+      {
+        "idService": 2,
+        "urlImg": "img/Services/web.png",
+        "titleService": "Web Development",
+        "descriptionService": "Desarrollo de sitios web rápidos, funcionales y adaptables, utilizando tecnologías modernas y enfoques de diseño centrados en el usuario.",
+        "important": "Una página web es la cara de la marca en internet y debe ser eficaz para atraer y convertir clientes.",
+        "objectives": "Crear una presencia web optimizada que sea fácil de navegar, accesible y responsiva.",
+        "plans": [
+          {
+            "idPlan": 1,
+            "typePlan": "Basico",
+            "urlPlanImg":"Img/pay/usuario (1).png",
+            "price": 7500.00,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Landing page"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Formulario de contacto"
+              }, 
+              {
+                "idContain": 3,
+                "containDescription": "Soporte tecnico"
+              }, 
+              {
+                "idContain": 4,
+                "containDescription": "Derechos reservados"
+              }
+            ]
+          },
+          {
+            "idPlan": 2,
+            "typePlan": "Profesional",
+            "urlPlanImg":"Img/pay/rectangulo-profesional.png",
+            "price": 13500.00,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Landing page"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Formulario de contacto"
+              }, 
+              {
+                "idContain": 3,
+                "containDescription": "Soporte tecnico"
+              }, 
+              {
+                "idContain": 4,
+                "containDescription": "Nombre de dominio"
+              }, 
+              {
+                "idContain": 3,
+                "containDescription": "Derechos reservados"
+              }
+            ]
+          },
+          {
+            "idPlan":3,
+            "typePlan": "Empresarial",
+            "urlPlanImg":"Img/pay/crecimiento-profesional.png",
+            "price": 23545.00,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Landing page"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Formulario de contacto"
+              }, 
+              {
+                "idContain": 3,
+                "containDescription": "Soporte tecnico"
+              }, 
+              {
+                "idContain": 4,
+                "containDescription": "Nombre de dominio"
+              }, 
+              {
+                "idContain": 5,
+                "containDescription": "Hosting"
+              },
+              {
+                "idContain": 6,
+                "containDescription": "Derechos reservados"
+              }
+            ]
+          }
+          
+        ]
+
+      },
+      {
+        "idService": 3,
+        "urlImg": "img/Services/Social-media.png",
+        "titleService": "Social Media Marketing",
+        "descriptionService": "Gestión de redes sociales y creación de estrategias de marketing digital para aumentar la visibilidad y engagement de la marca.",
+        "important": "Tener una presencia sólida en redes sociales es esencial para construir relaciones con los clientes y aumentar el alcance de la marca.",
+        "objectives": "Desarrollar campañas de marketing dirigidas que impulsen el crecimiento en las principales plataformas sociales.",
+        "plans": [
+          {
+            "idPlan": 1,
+            "typePlan": "Básico",
+            "urlPlanImg":"Img/pay/usuario (1).png",
+            "price": 6500.00,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "3 publicaciones semanales"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Monitoreo básico de redes"
+              },
+              {
+                "idContain": 3,
+                "containDescription": "1 informe mensual"
+              },
+              {
+                "idContain": 4,
+                "containDescription": "Gestión de 1 red social"
+              }
+            ]
+          },
+          {
+            "idPlan": 2,
+            "typePlan": "Profesional",
+            "urlPlanImg":"Img/pay/rectangulo-profesional.png",
+            "price": 12000.00,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "5 publicaciones semanales"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Monitoreo y análisis de rendimiento"
+              },
+              {
+                "idContain": 3,
+                "containDescription": "2 informes mensuales"
+              },
+              {
+                "idContain": 4,
+                "containDescription": "Gestión de hasta 3 redes sociales"
+              },
+              {
+                "idContain": 5,
+                "containDescription": "Consultoría mensual"
+              }
+            ]
+          },
+          {
+            "idPlan": 3,
+            "typePlan": "Empresarial",
+            "urlPlanImg":"Img/pay/crecimiento-profesional.png",
+            "price": 22000.00,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Publicaciones diarias"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Análisis avanzado de rendimiento"
+              },
+              {
+                "idContain": 3,
+                "containDescription": "Informes semanales"
+              },
+              {
+                "idContain": 4,
+                "containDescription": "Gestión de hasta 5 redes sociales"
+              },
+              {
+                "idContain": 5,
+                "containDescription": "Campañas pagas incluidas"
+              },
+              {
+                "idContain": 6,
+                "containDescription": "Soporte 24/7"
+              }
+            
+        ]
+      }
+      
+
+      
+    ]
+      },
+      
+      {
+        "idService": 4,
+        "urlImg": "img/Services/video.png",
+        "titleService": "Filmmaker - Video",
+        "descriptionService": "Producción y edición de videos de alta calidad para promocionar productos, servicios o eventos.",
+        "important": "Un buen video puede transmitir el mensaje de tu marca de manera efectiva y llegar a una audiencia más amplia.",
+        "objectives": "Crear contenido visual impactante que aumente el reconocimiento de marca y promueva la conversión de clientes.",
+        "plans": [
+          {
+            "idPlan": 1,
+            "typePlan": "Básico",
+            "urlPlanImg":"Img/pay/usuario (1).png",
+            "price": 8000.00,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Video promocional de 1 minuto"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Edición básica"
+              },
+              {
+                "idContain": 3,
+                "containDescription": "Música de fondo incluida"
+              },
+              {
+                "idContain": 4,
+                "containDescription": "1 ronda de revisiones"
+              }
+            ]
+          },
+          {
+            "idPlan": 2,
+            "typePlan": "Profesional",
+            "urlPlanImg":"Img/pay/rectangulo-profesional.png",
+            "price": 15000.00,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Video promocional de 3 minutos"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Edición avanzada con gráficos"
+              },
+              {
+                "idContain": 3,
+                "containDescription": "Música y efectos de sonido incluidos"
+              },
+              {
+                "idContain": 4,
+                "containDescription": "2 rondas de revisiones"
+              },
+              {
+                "idContain": 5,
+                "containDescription": "Asesoría en guion y contenido"
+              }
+            ]
+          },
+          {
+            "idPlan": 3,
+            "typePlan": "Empresarial",
+            "urlPlanImg":"Img/pay/crecimiento-profesional.png",
+            "price": 20000.00,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Video promocional de 5 minutos o más"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Edición premium con efectos especiales"
+              },
+              {
+                "idContain": 3,
+                "containDescription": "Filmación en múltiples ubicaciones"
+              },
+              {
+                "idContain": 4,
+                "containDescription": "Revisión ilimitada"
+              },
+              {
+                "idContain": 5,
+                "containDescription": "Asesoría completa en concepto, guion y edición"
+              },
+              {
+                "idContain": 6,
+                "containDescription": "Video adaptado para campañas en redes sociales"
+              }
+            ]
+          }
+        ]
+      }
+   ]
+  }

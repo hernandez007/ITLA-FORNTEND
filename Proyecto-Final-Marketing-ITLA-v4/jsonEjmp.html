@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Marketing</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.card p {
+  color: #555;
+}
+
+.card .important {
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.card .plans {
+  margin-top: 10px;
+}
+
+.card .plans p {
+  margin: 5px 0;
+}
+#plans-container {
+  margin-top: 30px;
+}
+
+#plans-container h3 {
+  color: #007BFF;
+}
+
+#plans-container .card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+    </style>
+</head>
+<body>
+  
+    <h1>Servicios de Marketing</h1>
+    <div id="services-container" class="card-container"></div>
+
+    <h2>Planes del Servicio Seleccionado</h2>
+    <div id="plans-container"></div>
+
+
+    <script>
+        // app.js
+// app.js
+document.addEventListener('DOMContentLoaded', () => {
+    const servicesContainer = document.getElementById('services-container');
+    const plansContainer = document.getElementById('plans-container');
+
+    // Función para obtener los datos del archivo JSON
+    fetch('Data/data.json')
+      .then(response => response.json())
+      .then(data => {
+          const services = data.arrayServices;
+          displayServices(services);
+      })
+      .catch(error => {
+          console.error("Error al cargar los servicios:", error);
+      });
+
+    // Función para mostrar los servicios como tarjetas
+    function displayServices(services) {
+        services.forEach(service => {
+            const serviceCard = document.createElement('div');
+            serviceCard.classList.add('card');
+            
+            serviceCard.innerHTML = `
+                <h2>${service.titleService}</h2>
+                <p>${service.descriptionService}</p>
+                <button data-id="${service.idService}">Ver Planes</button>
+            `;
+
+            // Agregar evento al botón para mostrar planes
+            serviceCard.querySelector('button').addEventListener('click', () => {
+                displayPlans(service.plans, service.titleService);
+            });
+
+            servicesContainer.appendChild(serviceCard);
+        });
+    }
+
+    // Función para mostrar los planes de un servicio específico
+    function displayPlans(plans, serviceTitle) {
+        plansContainer.innerHTML = `<h3>Planes de ${serviceTitle}</h3>`; // Limpiar contenedor anterior y agregar título
+        plans.forEach(plan => {
+            const planCard = document.createElement('div');
+            planCard.classList.add('card');
+            
+            planCard.innerHTML = `
+                <p><strong>${plan.tipePlan}</strong>: $${plan.price}</p>
+                <ul>
+                    ${plan.contains.map(contain => `
+                        <li>${contain.containDescription}</li>
+                    `).join('')}
+                </ul>
+            `;
+
+            plansContainer.appendChild(planCard);
+        });
+    }
+});
+
+    </script>
+</body>
+</html>

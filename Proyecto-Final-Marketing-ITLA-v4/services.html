@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMO - SERVICIOS</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="shortcut icon" href="Img/Logo/Normal.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/services.css">
+    <link rel="stylesheet" href="CSS/form.css">
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+
+            <div class="img-header">
+    
+                <img src="Img/Logo/Inverso-Fondo.png" alt="logo" class="logo-header">
+            </div>
+            <nav class="menu-nav">
+               <a href="index.html">Inicio</a>
+               <a href="#feature">Acerca De</a>
+               <a href="#services">Planes de Pago</a>
+               <a href="#footer">Contacto</a>
+            </nav>
+        </div>
+        <div class="header-info">
+            <h1 id="">SERVICIOS - <span id="titleServiceP"></span></h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="feature"  class="feature">
+            <div class="title-text">
+              <p id="nameService"></p>
+              <h2>Caracteristicas</h2>
+            </div>
+            <div class="feature-box">
+              <div class="features">
+                <h3>Descripcion</h3>
+                <div class="features-desc">
+                  <div class="feature-icon">
+                    <i class='bx bx-check-shield'></i>
+                  </div>
+                  <div class="feature-text">
+                    <p id="descriptionService"></p>
+                  </div>
+                </div>
+        
+                <h3>Importancia</h3>
+                <div class="features-desc">
+                  <div class="feature-icon">
+                    <i class='bx bx-food-menu'></i>
+                  </div>
+                  <div class="feature-text">
+                    <p id="important"></p>
+                  </div>
+                </div>
+        
+                <h3>Objetivos</h3>
+                <div class="features-desc">
+                  <div class="feature-icon">
+                    <i class='bx bxs-offer'></i>
+                  </div>
+                  <div class="feature-text">
+                    <p id="objectives"></p>
+                  </div>
+                </div>
+        
+              </div>
+        
+              <div class="features-img">
+                <img src="img/Banner/Banner-Logo-Lumo.png" alt="Tecnologia">
+              </div>
+            </div>
+        
+          </section>
+          <section class="team" id="services">
+            <div class="title-section">
+
+                <h2>PLANES DISPONIBLES</h2>
+            </div>
+            <div class="container-team-card" id="plansContainer">
+               
+            </div>
+            
+        </section>
+
+    
+    </main>
+    <footer id="footer" class="footer">
+      <!-- <img src="Img/Logo/Inverso-Fondo.png" alt="footer" class="footer-img"> -->
+      <div class="title-text">
+        <p>CONTACTANOS</p>
+        <h1>¡Alcanza el siguiente nivel!</h1>
+      </div>
+      <div class="footer-row">
+        <div class="footer-left">
+          <h1>Horarios</h1>
+          <p><i class='bx bxs-watch'></i>Lunes a Viernes - 8am a 6pm</p>
+          <p><i class='bx bxs-watch'></i>Sábados - 8am a 12pm</p>
+        </div>
+        <div class="footer-right">
+          <h1>Ponete en Contacto</h1>
+          <p>C/ Colon San Juan de la Maguana <i class='bx bxs-map'></i></p>
+          <p>infolumo@gmail.com<i class='bx bx-paper-plane'></i></p>
+          <p>829-882-5537<i class='bx bxl-whatsapp'></i></p>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://www.instagram.com/lumossj/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61565886310811&is_tour_dismissed" target="_blank"><i class='bx bxl-facebook'></i></a>
+        <!-- <a href="#" target="_blank"><i class='bx bxl-linkedin'></i></a>  -->
+        <a href="https://github.com/hernandez007" target="_blank"><i class='bx bxl-github'></i></a> 
+        <p>©Copyright Aderson Hernandez 2024</p>
+      </div>
+    </footer>
+    <!-- modal  -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="dia">Día de Agendar:</label>
+        <input type="date" id="dia" name="dia" required>
+
+        <label for="servicio">Servicio:</label>
+        <select id="servicio" name="servicio" required>
+          <option value="Fotografia de estudio<">Fotografia de estudio</option>
+          <option value="Cobertura fotografica">Cobertura fotografica</option>
+          <option value="Grabacion y edicion de videos">Grabacion y edicion de videos</option>
+          <option value="Plataforma 360">Plataforma 360</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ 
+    <script src="JS/smooth.js"></script>
+    <script src="JS/sevices.js"></script>
+    <script src="JS/form.js"></script>
+
+
+</body>
+</html>

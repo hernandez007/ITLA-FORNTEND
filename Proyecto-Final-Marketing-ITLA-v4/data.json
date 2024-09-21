@@ -1,0 +1,177 @@
+{
+    "arrayServices": [
+      {
+        "idService": 1,
+        "titleService": "Logo & Branding",
+        "descriptionService": "Creamos identidades visuales atractivas que conectan con el público objetivo, ayudando a las marcas a destacar en su industria.",
+        "important": "El branding adecuado establece una conexión emocional con los clientes y refuerza la lealtad de marca.",
+        "objectives": "Crear una imagen visual única que refleje los valores y la misión de la marca.",
+        "plans": [
+          {
+            "idPlan": 1,
+            "tipePlan": "Basic",
+            "price": 500,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Diseño de logotipo simple"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Paleta de colores básica"
+              }
+            ]
+          },
+          {
+            "idPlan": 2,
+            "tipePlan": "Premium",
+            "price": 1000,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Diseño de logotipo avanzado"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Guía de branding completa"
+              },
+              {
+                "idContain": 3,
+                "containDescription": "Tipografía personalizada"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "idService": 2,
+        "titleService": "Web Development",
+        "descriptionService": "Desarrollo de sitios web rápidos, funcionales y adaptables, utilizando tecnologías modernas y enfoques de diseño centrados en el usuario.",
+        "important": "Una página web es la cara de la marca en internet y debe ser eficaz para atraer y convertir clientes.",
+        "objectives": "Crear una presencia web optimizada que sea fácil de navegar, accesible y responsiva.",
+        "plans": [
+          {
+            "idPlan": 1,
+            "tipePlan": "Basic",
+            "price": 1500,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Sitio web de hasta 5 páginas"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Diseño responsivo"
+              }
+            ]
+          },
+          {
+            "idPlan": 2,
+            "tipePlan": "Advanced",
+            "price": 3000,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Sitio web de hasta 10 páginas"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "SEO básico"
+              },
+              {
+                "idContain": 3,
+                "containDescription": "Integración de e-commerce"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "idService": 3,
+        "titleService": "Social Media Marketing",
+        "descriptionService": "Gestión de redes sociales y creación de estrategias de marketing digital para aumentar la visibilidad y engagement de la marca.",
+        "important": "Tener una presencia sólida en redes sociales es esencial para construir relaciones con los clientes y aumentar el alcance de la marca.",
+        "objectives": "Desarrollar campañas de marketing dirigidas que impulsen el crecimiento en las principales plataformas sociales.",
+        "plans": [
+          {
+            "idPlan": 1,
+            "tipePlan": "Standard",
+            "price": 800,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Gestión de redes sociales (Facebook, Instagram)"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "2 publicaciones semanales"
+              }
+            ]
+          },
+          {
+            "idPlan": 2,
+            "tipePlan": "Advanced",
+            "price": 1500,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Gestión de redes sociales (Facebook, Instagram, LinkedIn)"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "4 publicaciones semanales"
+              },
+              {
+                "idContain": 3,
+                "containDescription": "Estrategia de contenido"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "idService": 4,
+        "titleService": "Filmmaking & Video",
+        "descriptionService": "Producción y edición de video para campañas de marketing, anuncios y contenido de redes sociales.",
+        "important": "El video es uno de los formatos de contenido más efectivos para captar la atención del público y comunicar el mensaje de manera clara.",
+        "objectives": "Crear contenido visual atractivo y de alta calidad que impulse el engagement y la conversión.",
+        "plans": [
+          {
+            "idPlan": 1,
+            "tipePlan": "Basic",
+            "price": 1200,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Video promocional de 1 minuto"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Edición básica"
+              }
+            ]
+          },
+          {
+            "idPlan": 2,
+            "tipePlan": "Professional",
+            "price": 2500,
+            "contains": [
+              {
+                "idContain": 1,
+                "containDescription": "Video promocional de 3 minutos"
+              },
+              {
+                "idContain": 2,
+                "containDescription": "Edición avanzada"
+              },
+              {
+                "idContain": 3,
+                "containDescription": "Efectos especiales"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
